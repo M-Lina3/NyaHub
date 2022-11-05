@@ -93,15 +93,16 @@
     <h2>The <em>secret life</em> of <strong>Long Cat</strong></h2>
 
     <div class="indentcat">
-      Long Cat is, as his name states, a long cat. He is a nice shade of pink
-      with brown stripes, and a white belly. Long Cat is a very nice cat. <br />
+      Long Cat is, as his name states, a long cat. He is a delightful shade of
+      pink with brown stripes, and a white belly. Long Cat is a very nice cat.
+      <br />
       ꒰ঌ૮( ̳ᴗ ̫ ᴗ ̳ )ა໒꒱ >
     </div>
     <p>
       Long Cat was born in a factory in China where he spent most of his
       childhood playing with his kin. After a couple of weeks, he and many other
       long cats were shipped to an Amazon warehouse in the United States. There
-      he learned english, how to overwork your employees, and the true purpose
+      he learned English, how to overwork your employees, and the true purpose
       of long cats. Said purpose can be defined with the immemorial phrase "Long
       cats bring happiness to the world".
     </p>
@@ -124,11 +125,14 @@
     <br />
     <hr />
     <div class="basiccat">
-      Just as how long cats brings happiness into your life, you too shall give
+      Just as how long cats bring happiness into your life, you too shall give
       happiness to long cats. <br />
       Long Cat wishes to be reunited with his
       <span class="emphasizedcat">bretheren</span>.
-      <div class="onegai">Please buy more long cats .°ʚ( • ω•)ɞ˚˙</div>
+      <div class="onegai">
+        Please support Long Cat in his quest and buy more long cats .°ʚ( •
+        ω•)ɞ˚˙
+      </div>
       Long cats can be found
       <a
         href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221104113816&SearchText=long+cat+pillow&spm=a2g0o.home.1000002.0"
@@ -136,7 +140,7 @@
       >
         <strong>here</strong></a
       >
-      & at Amazon.com
+      & on Amazon.com
     </div>
     <br />
     <button>Click Me</button>
@@ -154,7 +158,7 @@
         let name = prompt("What is your name?");
         if (name.length <= 0) {
           alert(
-            "What's in a name? That which we call a rose by any other name would smell as sweet. Please enter your name."
+            "What's in a name? That which we call a rose, by any other name would smell as sweet. Please enter your name."
           );
           return supportCats();
         } else {
@@ -164,10 +168,16 @@
           let h1 = document.querySelector("h1");
 
           answer = purchase.toLowerCase();
+          answer = answer.trim();
           if (answer === "yes") {
             h1.innerHTML = `Thank you ${name}! Long cats are forever indebted to you`;
-          } else {
+            return window.scrollTo(0, 0);
+          } else if (answer === "no") {
             h1.innerHTML = `${name}, you should reconsider your life choices`;
+            return window.scrollTo(0, 0);
+          } else {
+            alert(`${name}... do you english? Let's try this again.`);
+            return supportCats();
           }
         }
       }
