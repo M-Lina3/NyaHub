@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nyaaa</title>
+    <style>
+      body {
+        background: linear-gradient(#ffffff, #ffb5d7);
+      }
+
+      h1,
+      h2,
+      .onegai {
+        text-align: center;
+      }
+      .onegai,
+      p,
+      .basiccat,
+      .indentcat {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      h1 {
+        color: #f660a6;
+        font-size: 35px;
+      }
+      h2 {
+        color: #000;
+        font-size: 20px;
+        font-weight: lighter;
+      }
+      .indentcat {
+        text-indent: 15%;
+      }
+      p {
+        color: #000;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+      }
+      .picholder {
+        text-align: center;
+      }
+      .centercatx2 {
+        display: inline-block;
+        position: static;
+      }
+      .basiccat {
+        color: #000;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+      }
+      .emphasizedcat {
+        color: #000;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 15px;
+      }
+      .onegai {
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      button {
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        background: #f660a6;
+        border-color: #fc82bb;
+        border-radius: 30px;
+        box-shadow: 7px 5px 5px lightgray;
+        display: block;
+        margin: 0 auto 30px auto;
+        padding: 15px 25px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #ffffff;
+        color: #f660a6;
+        cursor: grab;
+      }
+      .centercat {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nyaaa ฅ•ω•ฅ</h1>
+    <h2>The <em>secret life</em> of <strong>Long Cat</strong></h2>
+
+    <div class="indentcat">
+      Long Cat is, as his name states, a long cat. He is a nice shade of pink
+      with brown stripes, and a white belly. Long Cat is a very nice cat. <br />
+      ꒰ঌ૮( ̳ᴗ ̫ ᴗ ̳ )ა໒꒱ >
+    </div>
+    <p>
+      Long Cat was born in a factory in China where he spent most of his
+      childhood playing with his kin. After a couple of weeks, he and many other
+      long cats were shipped to an Amazon warehouse in the United States. There
+      he learned english, how to overwork your employees, and the true purpose
+      of long cats. Said purpose can be defined with the immemorial phrase "Long
+      cats bring happiness to the world".
+    </p>
+
+    <div class="picholder">
+      <img
+        class="centercatx2"
+        src="https://ae01.alicdn.com/kf/Sf167a0eef1184e26975db2808eed0f4ai.jpg"
+        alt="Long Cat"
+        width="333"
+      />
+      &nbsp;&nbsp;&nbsp;
+      <img
+        class="centercatx2"
+        src="https://ae01.alicdn.com/kf/Sb6a0b4d2177c4130bb1fce9cdd7a45e9y.jpg"
+        alt="long cats"
+        style="width: 333px; height: 333px; object-fit: cover"
+      />
+    </div>
+    <br />
+    <hr />
+    <div class="basiccat">
+      Just as how long cats brings happiness into your life, you too shall give
+      happiness to long cats. <br />
+      Long Cat wishes to be reunited with his
+      <span class="emphasizedcat">bretheren</span>.
+      <div class="onegai">Please buy more long cats .°ʚ( • ω•)ɞ˚˙</div>
+      Long cats can be found
+      <a
+        href="https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20221104113816&SearchText=long+cat+pillow&spm=a2g0o.home.1000002.0"
+        target="_blank"
+      >
+        <strong>here</strong></a
+      >
+      & at Amazon.com
+    </div>
+    <br />
+    <button>Click Me</button>
+    <br />
+    <br />
+
+    <img
+      class="centercat"
+      src="https://ae01.alicdn.com/kf/S130016a2add1465bbef0b768567251d7n.jpg"
+      alt="long cats details"
+      width="333"
+    />
+    <script>
+      function supportCats() {
+        let name = prompt("What is your name?");
+        if (name.length <= 0) {
+          alert(
+            "What's in a name? That which we call a rose by any other name would smell as sweet. Please enter your name."
+          );
+          return supportCats();
+        } else {
+          let purchase = prompt(
+            'Will you purchase long cats? (Please answer "yes" or "no")'
+          );
+          let h1 = document.querySelector("h1");
+
+          answer = purchase.toLowerCase();
+          if (answer === "yes") {
+            h1.innerHTML = `Thank you ${name}! Long cats are forever indebted to you`;
+          } else {
+            h1.innerHTML = `${name}, you should reconsider your life choices`;
+          }
+        }
+      }
+
+      let supportButton = document.querySelector("button");
+
+      supportButton.addEventListener("click", supportCats);
+    </script>
+  </body>
+</html>
